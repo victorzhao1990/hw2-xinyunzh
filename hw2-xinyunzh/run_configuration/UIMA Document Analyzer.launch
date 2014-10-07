@@ -10,5 +10,5 @@
 <stringAttribute key="org.eclipse.debug.ui.target_debug_perspective" value="perspective_default"/>
 <stringAttribute key="org.eclipse.debug.ui.target_run_perspective" value="perspective_default"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.apache.uima.tools.docanalyzer.DocumentAnalyzer"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="hw2-xinyunzh"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="hw2-xinyunzh-ziy-proto"/>
 </launchConfiguration>
