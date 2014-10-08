@@ -13,6 +13,7 @@ import org.apache.uima.cas.FSIterator;
 import org.apache.uima.cas.text.AnnotationIndex;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
+import org.apache.uima.resource.ResourceAccessException;
 import org.apache.uima.resource.ResourceInitializationException;
 
 import com.aliasi.chunk.Chunk;
@@ -44,10 +45,13 @@ public class LingAnno extends JCasAnnotator_ImplBase {
 		super.initialize(aContext);
 		try {
 			chunker = (ConfidenceChunker) AbstractExternalizable.
-					readObject(new File("resources/neenbiogenetag.HmmChunker"));
+					readObject(new File(getContext().getResourceFilePath("HmmChunker")));
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ResourceAccessException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

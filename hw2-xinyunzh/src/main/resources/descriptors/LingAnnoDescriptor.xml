@@ -30,6 +30,13 @@
       <outputsNewCASes>false</outputsNewCASes>
     </operationalProperties>
   </analysisEngineMetaData>
+  <externalResourceDependencies>
+    <externalResourceDependency>
+      <key>HmmChunker</key>
+      <description>the surfix of a file.</description>
+      <optional>false</optional>
+    </externalResourceDependency>
+  </externalResourceDependencies>
   <resourceManagerConfiguration>
     <externalResources>
       <externalResource>
@@ -40,5 +47,11 @@
         </fileResourceSpecifier>
       </externalResource>
     </externalResources>
+  <externalResourceBindings>
+      <externalResourceBinding>
+        <key>HmmChunker</key>
+        <resourceName>GeneTagModel</resourceName>
+      </externalResourceBinding>
+    </externalResourceBindings>
   </resourceManagerConfiguration>
 </analysisEngineDescription>
