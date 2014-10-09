@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Thu Oct 09 17:12:00 EDT 2014 */
+/* First created by JCasGen Thu Oct 09 18:33:35 EDT 2014 */
 package com.victorzhao.hw2.types;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 09 17:13:44 EDT 2014
+ * Updated by JCasGen Thu Oct 09 18:33:35 EDT 2014
  * XML source: /Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/hw2TypeSystemDescriptor.xml
  * @generated */
 public class Line extends Annotation {

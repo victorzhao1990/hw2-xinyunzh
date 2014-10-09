@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Oct 09 17:12:00 EDT 2014 */
+/* First created by JCasGen Thu Oct 09 18:33:35 EDT 2014 */
 package com.victorzhao.hw2.types;
 
 import org.apache.uima.jcas.JCas;
@@ -11,10 +11,9 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
-import com.victorzhao.AnnoType_Type;
 
 /** 
- * Updated by JCasGen Thu Oct 09 17:13:44 EDT 2014
+ * Updated by JCasGen Thu Oct 09 18:33:35 EDT 2014
  * @generated */
 public class AbAnnoType_Type extends AnnoType_Type {
   /** @generated 

@@ -11,7 +11,7 @@
     <typeDescription>
       <name>com.victorzhao.hw2.types.LingAnnoType</name>
       <description/>
-      <supertypeName>com.victorzhao.AnnoType</supertypeName>
+      <supertypeName>com.victorzhao.hw2.types.AnnoType</supertypeName>
       </typeDescription>
   <typeDescription>
       <name>com.victorzhao.hw2.types.Line</name>
@@ -33,7 +33,7 @@
     <typeDescription>
       <name>com.victorzhao.hw2.types.AbAnnoType</name>
       <description/>
-      <supertypeName>com.victorzhao.AnnoType</supertypeName>
+      <supertypeName>com.victorzhao.hw2.types.AnnoType</supertypeName>
       <features>
         <featureDescription>
           <name>Tag</name>
@@ -45,10 +45,10 @@
     <typeDescription>
       <name>com.victorzhao.hw2.types.EvalAnnoType</name>
       <description/>
-      <supertypeName>com.victorzhao.AnnoType</supertypeName>
+      <supertypeName>com.victorzhao.hw2.types.AnnoType</supertypeName>
       </typeDescription>
   <typeDescription>
-      <name>com.victorzhao.AnnoType</name>
+      <name>com.victorzhao.hw2.types.AnnoType</name>
       <description>The base type for all types of annotators.</description>
       <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
       <features>
