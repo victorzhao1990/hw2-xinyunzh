@@ -43,7 +43,7 @@
         <name>GeneTagModel</name>
         <description>English Genes: GeneTag ne-en-bio-genetag.HmmChunker</description>
         <fileResourceSpecifier>
-          <fileUrl>neenbiogenetag.HmmChunker</fileUrl>
+          <fileUrl>file:neenbiogenetag.HmmChunker</fileUrl>
         </fileResourceSpecifier>
       </externalResource>
     </externalResources>
