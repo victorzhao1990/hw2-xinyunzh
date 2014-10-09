@@ -16,7 +16,7 @@ import com.victorzhao.hw2.types.LingAnnoType;
 
 public class EvalAnno extends JCasAnnotator_ImplBase {
 
-	private static final double CONF_THRES = 0.1;
+	private static final double CONF_THRES = 0.3;
 
 	private HashMap<String, AbAnnoType> hsAbner;
 

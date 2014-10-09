@@ -11,20 +11,8 @@
     <typeDescription>
       <name>com.victorzhao.hw2.types.LingAnnoType</name>
       <description/>
-      <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
-      <features>
-        <featureDescription>
-          <name>Content</name>
-          <description/>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>Id</name>
-          <description/>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
-      </features>
-    </typeDescription>
+      <supertypeName>com.victorzhao.AnnoType</supertypeName>
+      </typeDescription>
   <typeDescription>
       <name>com.victorzhao.hw2.types.Line</name>
       <description/>
@@ -45,18 +33,8 @@
     <typeDescription>
       <name>com.victorzhao.hw2.types.AbAnnoType</name>
       <description/>
-      <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
+      <supertypeName>com.victorzhao.AnnoType</supertypeName>
       <features>
-        <featureDescription>
-          <name>Content</name>
-          <description/>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>Id</name>
-          <description/>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
         <featureDescription>
           <name>Tag</name>
           <description/>
@@ -67,6 +45,11 @@
     <typeDescription>
       <name>com.victorzhao.hw2.types.EvalAnnoType</name>
       <description/>
+      <supertypeName>com.victorzhao.AnnoType</supertypeName>
+      </typeDescription>
+  <typeDescription>
+      <name>com.victorzhao.AnnoType</name>
+      <description>The base type for all types of annotators.</description>
       <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
       <features>
         <featureDescription>

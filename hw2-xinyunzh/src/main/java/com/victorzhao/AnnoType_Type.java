@@ -1,6 +1,6 @@
 
 /* First created by JCasGen Thu Oct 09 17:12:00 EDT 2014 */
-package com.victorzhao.hw2.types;
+package com.victorzhao;
 
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
@@ -11,12 +11,12 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
-import org.apache.uima.jcas.tcas.Annotation_Type;
+import edu.cmu.deiis.types.Annotation_Type;
 
-/** 
+/** The base type for all types of annotators.
  * Updated by JCasGen Thu Oct 09 17:13:44 EDT 2014
  * @generated */
-public class Line_Type extends Annotation_Type {
+public class AnnoType_Type extends Annotation_Type {
   /** @generated 
    * @return the generator for this type
    */
@@ -26,25 +26,25 @@ public class Line_Type extends Annotation_Type {
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
-  			 if (Line_Type.this.useExistingInstance) {
+  			 if (AnnoType_Type.this.useExistingInstance) {
   			   // Return eq fs instance if already created
-  		     FeatureStructure fs = Line_Type.this.jcas.getJfsFromCaddr(addr);
+  		     FeatureStructure fs = AnnoType_Type.this.jcas.getJfsFromCaddr(addr);
   		     if (null == fs) {
-  		       fs = new Line(addr, Line_Type.this);
-  			   Line_Type.this.jcas.putJfsFromCaddr(addr, fs);
+  		       fs = new AnnoType(addr, AnnoType_Type.this);
+  			   AnnoType_Type.this.jcas.putJfsFromCaddr(addr, fs);
   			   return fs;
   		     }
   		     return fs;
-        } else return new Line(addr, Line_Type.this);
+        } else return new AnnoType(addr, AnnoType_Type.this);
   	  }
     };
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = Line.typeIndexID;
+  public final static int typeIndexID = AnnoType.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("com.victorzhao.hw2.types.Line");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("com.victorzhao.AnnoType");
  
   /** @generated */
   final Feature casFeat_Content;
@@ -56,7 +56,7 @@ public class Line_Type extends Annotation_Type {
    */ 
   public String getContent(int addr) {
         if (featOkTst && casFeat_Content == null)
-      jcas.throwFeatMissing("Content", "com.victorzhao.hw2.types.Line");
+      jcas.throwFeatMissing("Content", "com.victorzhao.AnnoType");
     return ll_cas.ll_getStringValue(addr, casFeatCode_Content);
   }
   /** @generated
@@ -65,32 +65,32 @@ public class Line_Type extends Annotation_Type {
    */    
   public void setContent(int addr, String v) {
         if (featOkTst && casFeat_Content == null)
-      jcas.throwFeatMissing("Content", "com.victorzhao.hw2.types.Line");
+      jcas.throwFeatMissing("Content", "com.victorzhao.AnnoType");
     ll_cas.ll_setStringValue(addr, casFeatCode_Content, v);}
     
   
  
   /** @generated */
-  final Feature casFeat_SentenceId;
+  final Feature casFeat_Id;
   /** @generated */
-  final int     casFeatCode_SentenceId;
+  final int     casFeatCode_Id;
   /** @generated
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
-  public String getSentenceId(int addr) {
-        if (featOkTst && casFeat_SentenceId == null)
-      jcas.throwFeatMissing("SentenceId", "com.victorzhao.hw2.types.Line");
-    return ll_cas.ll_getStringValue(addr, casFeatCode_SentenceId);
+  public String getId(int addr) {
+        if (featOkTst && casFeat_Id == null)
+      jcas.throwFeatMissing("Id", "com.victorzhao.AnnoType");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_Id);
   }
   /** @generated
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
-  public void setSentenceId(int addr, String v) {
-        if (featOkTst && casFeat_SentenceId == null)
-      jcas.throwFeatMissing("SentenceId", "com.victorzhao.hw2.types.Line");
-    ll_cas.ll_setStringValue(addr, casFeatCode_SentenceId, v);}
+  public void setId(int addr, String v) {
+        if (featOkTst && casFeat_Id == null)
+      jcas.throwFeatMissing("Id", "com.victorzhao.AnnoType");
+    ll_cas.ll_setStringValue(addr, casFeatCode_Id, v);}
     
   
 
@@ -101,7 +101,7 @@ public class Line_Type extends Annotation_Type {
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */
-  public Line_Type(JCas jcas, Type casType) {
+  public AnnoType_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
@@ -110,8 +110,8 @@ public class Line_Type extends Annotation_Type {
     casFeatCode_Content  = (null == casFeat_Content) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_Content).getCode();
 
  
-    casFeat_SentenceId = jcas.getRequiredFeatureDE(casType, "SentenceId", "uima.cas.String", featOkTst);
-    casFeatCode_SentenceId  = (null == casFeat_SentenceId) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_SentenceId).getCode();
+    casFeat_Id = jcas.getRequiredFeatureDE(casType, "Id", "uima.cas.String", featOkTst);
+    casFeatCode_Id  = (null == casFeat_Id) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_Id).getCode();
 
   }
 }

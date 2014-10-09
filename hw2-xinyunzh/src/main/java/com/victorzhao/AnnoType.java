@@ -1,25 +1,25 @@
 
 
 /* First created by JCasGen Thu Oct 09 17:12:00 EDT 2014 */
-package com.victorzhao.hw2.types;
+package com.victorzhao;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import org.apache.uima.jcas.tcas.Annotation;
+import edu.cmu.deiis.types.Annotation;
 
 
-/** 
+/** The base type for all types of annotators.
  * Updated by JCasGen Thu Oct 09 17:13:44 EDT 2014
  * XML source: /Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/hw2TypeSystemDescriptor.xml
  * @generated */
-public class Line extends Annotation {
+public class AnnoType extends Annotation {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(Line.class);
+  public final static int typeIndexID = JCasRegistry.register(AnnoType.class);
   /** @generated
    * @ordered 
    */
@@ -33,14 +33,14 @@ public class Line extends Annotation {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected Line() {/* intentionally empty block */}
+  protected AnnoType() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Line(int addr, TOP_Type type) {
+  public AnnoType(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
@@ -48,7 +48,7 @@ public class Line extends Annotation {
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs 
    */
-  public Line(JCas jcas) {
+  public AnnoType(JCas jcas) {
     super(jcas);
     readObject();   
   } 
@@ -58,7 +58,7 @@ public class Line extends Annotation {
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
   */  
-  public Line(JCas jcas, int begin, int end) {
+  public AnnoType(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -84,40 +84,40 @@ public class Line extends Annotation {
    * @return value of the feature 
    */
   public String getContent() {
-    if (Line_Type.featOkTst && ((Line_Type)jcasType).casFeat_Content == null)
-      jcasType.jcas.throwFeatMissing("Content", "com.victorzhao.hw2.types.Line");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Line_Type)jcasType).casFeatCode_Content);}
+    if (AnnoType_Type.featOkTst && ((AnnoType_Type)jcasType).casFeat_Content == null)
+      jcasType.jcas.throwFeatMissing("Content", "com.victorzhao.AnnoType");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((AnnoType_Type)jcasType).casFeatCode_Content);}
     
   /** setter for Content - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setContent(String v) {
-    if (Line_Type.featOkTst && ((Line_Type)jcasType).casFeat_Content == null)
-      jcasType.jcas.throwFeatMissing("Content", "com.victorzhao.hw2.types.Line");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Line_Type)jcasType).casFeatCode_Content, v);}    
+    if (AnnoType_Type.featOkTst && ((AnnoType_Type)jcasType).casFeat_Content == null)
+      jcasType.jcas.throwFeatMissing("Content", "com.victorzhao.AnnoType");
+    jcasType.ll_cas.ll_setStringValue(addr, ((AnnoType_Type)jcasType).casFeatCode_Content, v);}    
    
     
   //*--------------*
-  //* Feature: SentenceId
+  //* Feature: Id
 
-  /** getter for SentenceId - gets 
+  /** getter for Id - gets 
    * @generated
    * @return value of the feature 
    */
-  public String getSentenceId() {
-    if (Line_Type.featOkTst && ((Line_Type)jcasType).casFeat_SentenceId == null)
-      jcasType.jcas.throwFeatMissing("SentenceId", "com.victorzhao.hw2.types.Line");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Line_Type)jcasType).casFeatCode_SentenceId);}
+  public String getId() {
+    if (AnnoType_Type.featOkTst && ((AnnoType_Type)jcasType).casFeat_Id == null)
+      jcasType.jcas.throwFeatMissing("Id", "com.victorzhao.AnnoType");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((AnnoType_Type)jcasType).casFeatCode_Id);}
     
-  /** setter for SentenceId - sets  
+  /** setter for Id - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setSentenceId(String v) {
-    if (Line_Type.featOkTst && ((Line_Type)jcasType).casFeat_SentenceId == null)
-      jcasType.jcas.throwFeatMissing("SentenceId", "com.victorzhao.hw2.types.Line");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Line_Type)jcasType).casFeatCode_SentenceId, v);}    
+  public void setId(String v) {
+    if (AnnoType_Type.featOkTst && ((AnnoType_Type)jcasType).casFeat_Id == null)
+      jcasType.jcas.throwFeatMissing("Id", "com.victorzhao.AnnoType");
+    jcasType.ll_cas.ll_setStringValue(addr, ((AnnoType_Type)jcasType).casFeatCode_Id, v);}    
   }
 
     
