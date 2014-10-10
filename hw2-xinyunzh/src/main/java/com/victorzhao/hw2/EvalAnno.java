@@ -13,13 +13,25 @@ import com.victorzhao.hw2.types.AbAnnoType;
 import com.victorzhao.hw2.types.EvalAnnoType;
 import com.victorzhao.hw2.types.Line;
 import com.victorzhao.hw2.types.LingAnnoType;
-
+/**
+ * This class is the last annotator of the aggregate analysis engine, which is also the last part of the whole
+ * annotation pipeline. This annotator will collect the annotation from the previous two annotators, LingAnno and
+ * AbAnno. By choosing a specific threshold of confidence value, all of the annotations produced by LingAnno which have the
+ * higher score will be taken into consideration. Otherwise, it will lookup the results from AbAnno to check if there are some
+ * identical annotation, which can complement the lower confidence assigned by LingAnno.
+ * 
+ * @author victorzhao
+ *
+ */
 public class EvalAnno extends JCasAnnotator_ImplBase {
 
+	/** The threshold value of confidence */
 	private static final double CONF_THRES = 0.3;
-
+	
+	/** The HashMap instance that used to eliminate the duplicated annotations produced by AbnerAnno */
 	private HashMap<String, AbAnnoType> hsAbner;
-
+	
+	/** The helper function that use to remove the spaces between the each tokens */
 	private int removeSpace(String text, int pos) {
 		int posWithoutSpace = 0, index = 0;
 		while (index < pos) {
@@ -31,7 +43,14 @@ public class EvalAnno extends JCasAnnotator_ImplBase {
 		return posWithoutSpace;
 	}
 
-	@Override
+	/**
+	 * process(JCas aJCas) is the main method of EvalAnno, which collect all of the valuable annotation produce
+	 * by AbnerAnno and LingAnno. Moreover, it also store the final result into a new type of annotation, which is 
+	 * EvalAnnoType.
+	 * 
+	 * @param aJCas
+	 *            a JCAS that EvalAnno should process.
+	 */
 	public void process(JCas aJCas) throws AnalysisEngineProcessException {
 		hsAbner = new HashMap<String, AbAnnoType>();
 

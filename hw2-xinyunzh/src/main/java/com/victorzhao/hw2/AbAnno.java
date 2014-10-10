@@ -14,16 +14,37 @@ import abner.Tagger;
 import com.victorzhao.hw2.types.AbAnnoType;
 import com.victorzhao.hw2.types.Line;
 
+/**
+ * This class is the one of the annotators that consists of the aggregate analysis engine
+ * in this Collection Process Engine, which mainly extract the gene tokens by using Abner 
+ * package. 
+ * 
+ * @author victorzhao
+ *
+ */
+
 public class AbAnno extends JCasAnnotator_ImplBase {
 
-	/** The tagger instance */
+	/** The tagger instance used by Abner */
 	private Tagger t;
-
+	
+	/** 
+	 * This method will initialize a tagger instance used by Abner
+	 * @param aContext
+	 * 			Provides access to services and resources managed by the framework. 
+	 * 			This includes configuration parameters, logging, and access to external resources.
+	 */
 	public void initialize(UimaContext aContext) throws ResourceInitializationException {
 		t = new Tagger();
 	}
 
-	@Override
+	/**
+	 * process(JCas aJCas) is the main method of AbAnno, which utilize the Abner package to extract all of the 
+	 * biological terms and stored them into annotation.
+	 * 
+	 * @param aJCas
+	 * 			a JCAS that AberAnno should process.
+	 */
 	public void process(JCas aJCas) throws AnalysisEngineProcessException {
 		AnnotationIndex<Annotation> lineIndex = aJCas
 				.getAnnotationIndex(Line.type);

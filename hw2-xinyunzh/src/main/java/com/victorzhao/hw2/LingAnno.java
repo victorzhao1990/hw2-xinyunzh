@@ -13,7 +13,6 @@ import org.apache.uima.cas.FSIterator;
 import org.apache.uima.cas.text.AnnotationIndex;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
-import org.apache.uima.resource.ResourceAccessException;
 import org.apache.uima.resource.ResourceInitializationException;
 
 import com.aliasi.chunk.Chunk;
@@ -22,6 +21,14 @@ import com.aliasi.util.AbstractExternalizable;
 import com.victorzhao.hw2.types.Line;
 import com.victorzhao.hw2.types.LingAnnoType;
 
+/**
+ * This class is the one of the annotators that consists of the aggregate analysis engine
+ * in this Collection Process Engine, which mainly extract the gene tokens by using LingPipe 
+ * package. This annotator is based on Confidence Named Entity Chunking.
+ * 
+ * @author victorzhao
+ *
+ */
 public class LingAnno extends JCasAnnotator_ImplBase {
 
 	/** The ConfidenceChunker instance */
@@ -30,17 +37,20 @@ public class LingAnno extends JCasAnnotator_ImplBase {
 	/** The number of maximum words within a gene name */
 	private static final int MAX_N_BEST_CHUNKS = 8;
 	
+	/** The path of the model file for LingPipe */
 	private static final String RESOURCE_PATH_NAME = "/neenbiogenetag.HmmChunker";
 
-	/** The File instance for model */
-	private File model;
+//	/** The File instance for model */
+//	private File model;
 
 	/**
 	 * This method will initialize one instance for private variable chunker ,
-	 * which is one of the components of Lingpipe. It also loads the Genetag
+	 * which is one of the components of LingPipe. It also loads the Genetag
 	 * Model into the annotator.
 	 * 
 	 * @param aContext
+	 * 			Provides access to services and resources managed by the framework. 
+	 * 			This includes configuration parameters, logging, and access to external resources.
 	 * 
 	 */
 	public void initialize(UimaContext aContext) throws ResourceInitializationException {
@@ -62,7 +72,7 @@ public class LingAnno extends JCasAnnotator_ImplBase {
 	 * them.
 	 * 
 	 * @param aJCas
-	 *            a JCAS that GeneAnnotator should process.
+	 *            a JCAS that LingAnno should process.
 	 */
 	public void process(JCas aJCas) throws AnalysisEngineProcessException {
 		AnnotationIndex<Annotation> lineIndex = aJCas
