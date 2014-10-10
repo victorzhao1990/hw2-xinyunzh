@@ -11,9 +11,11 @@ The aggregate analysis engine consists of three annotators.
 * The last annotator will merge the results produced by the previous two analysis engines. In terms of the threshold of confidence, all of the entities which have a confidence below that threshold will be excluded from the results given by LingPipe-based annotator. However, the corresponding results from Abner-based annotator are taken into consideration by the last annotator, which may increase the F-measure result.
 
 ### Type System Class Diagram
+![Type System Diagram](https://github.com/victorzhao1990/hw2-xinyunzh/blob/master/hw2-xinyunzh/src/main/resources/docs/type-diagram.png)
 
 
 ### Collection Processing Engine Design Diagram
+![CPE Diagram](https://github.com/victorzhao1990/hw2-xinyunzh/blob/master/hw2-xinyunzh/src/main/resources/docs/domain-diagram.png)
 
 ### Collection reader
 
