@@ -14,17 +14,11 @@
         <multiValued>false</multiValued>
         <mandatory>true</mandatory>
       </configurationParameter>
-      <configurationParameter>
-        <name>SampleOutFile</name>
-        <type>String</type>
-        <multiValued>false</multiValued>
-        <mandatory>false</mandatory>
-      </configurationParameter>
-    </configurationParameters>
+      </configurationParameters>
     <configurationParameterSettings/>
     <typeSystemDescription>
       <imports>
-        <import location="/Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/hw2TypeSystemDescriptor.xml"/>
+        <import location="hw2TypeSystemDescriptor.xml"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>

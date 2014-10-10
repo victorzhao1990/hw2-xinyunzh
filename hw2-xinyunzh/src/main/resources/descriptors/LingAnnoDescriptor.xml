@@ -11,8 +11,8 @@
     <configurationParameterSettings/>
     <typeSystemDescription>
       <imports>
-        <import location="/Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/deiis_types.xml"/>
-      <import location="/Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/hw2TypeSystemDescriptor.xml"/>
+        <import location="deiis_types.xml"/>
+      <import location="hw2TypeSystemDescriptor.xml"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>
@@ -30,28 +30,6 @@
       <outputsNewCASes>false</outputsNewCASes>
     </operationalProperties>
   </analysisEngineMetaData>
-  <externalResourceDependencies>
-    <externalResourceDependency>
-      <key>HmmChunker</key>
-      <description>the surfix of a file.</description>
-      <optional>false</optional>
-    </externalResourceDependency>
-  </externalResourceDependencies>
   <resourceManagerConfiguration>
-    <externalResources>
-      <externalResource>
-        <name>GeneTagModel</name>
-        <description>English Genes: GeneTag ne-en-bio-genetag.HmmChunker</description>
-        <fileResourceSpecifier>
-          <fileUrl>file:neenbiogenetag.HmmChunker</fileUrl>
-        </fileResourceSpecifier>
-      </externalResource>
-    </externalResources>
-  <externalResourceBindings>
-      <externalResourceBinding>
-        <key>HmmChunker</key>
-        <resourceName>GeneTagModel</resourceName>
-      </externalResourceBinding>
-    </externalResourceBindings>
-  </resourceManagerConfiguration>
+    </resourceManagerConfiguration>
 </analysisEngineDescription>

@@ -2,7 +2,7 @@ Mac!!!
 Error file: /Users/victorzhao/git/hw2-xinyunzh/test_script/grading_hw1_2/report.txt
 SCRIPT_DIR=/Users/victorzhao/git/hw2-xinyunzh/test_script/grading_hw1_2/.
 Student: xinyunzh, input file: hw2.in,  output file: hw2-xinyunzh.out  CPE file: CpeDescriptor.xml
-POM-file: /Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2//hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.pom group id: edu.cmu.lti.11791.f14.hw2 artifact id: hw2-xinyunzh version '0.0.1-SNAPSHOT' base dir: 'run/hw2-xinyunzh'
+POM-file: /Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2//hw2-xinyunzh/0.0.2/hw2-xinyunzh-0.0.2.pom group id: edu.cmu.lti.11791.f14.hw2 artifact id: hw2-xinyunzh version '0.0.2' base dir: 'run/hw2-xinyunzh'
 /Users/victorzhao/git/hw2-xinyunzh/test_script/grading_hw1_2
 Output file is  missing, let's execute hw2-xinyunzh
 mvn clean compile exec:java -Dexec.mainClass=RunJarCPE  -Dexec.args="CpeDescriptor.xml"
@@ -15,24 +15,13 @@ mvn clean compile exec:java -Dexec.mainClass=RunJarCPE  -Dexec.args="CpeDescript
 [WARNING] 
 [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
 [WARNING] 
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
-4/20 KB   4/20 KB   4/13 KB   8/20 KB   4/13 KB   8/20 KB   8/13 KB   8/20 KB   8/13 KB   8/20 KB   8/13 KB   8/20 KB   12/13 KB   8/20 KB   13/13 KB   12/20 KB   13/13 KB   16/20 KB   13/13 KB   16/20 KB   13/13 KB   20/20 KB   13/13 KB                         Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (13 KB at 26.1 KB/sec)
-                      Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (20 KB at 40.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/maven-metadata.xml
-648/648 B                         Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/maven-metadata.xml (648 B at 9.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.3.2/exec-maven-plugin-1.3.2.pom
-4/12 KB     8/12 KB   8/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.3.2/exec-maven-plugin-1.3.2.pom (12 KB at 168.6 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/33/mojo-parent-33.pom
-4/26 KB    8/26 KB   8/26 KB   12/26 KB   16/26 KB   16/26 KB   20/26 KB   24/26 KB   24/26 KB   26/26 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/33/mojo-parent-33.pom (26 KB at 272.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.3.2/exec-maven-plugin-1.3.2.jar
-4/46 KB    8/46 KB   8/46 KB   12/46 KB   16/46 KB   16/46 KB   20/46 KB   24/46 KB   24/46 KB   28/46 KB   31/46 KB   32/46 KB   36/46 KB   39/46 KB   40/46 KB   44/46 KB   46/46 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-plugin/1.3.2/exec-maven-plugin-1.3.2.jar (46 KB at 447.6 KB/sec)
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building grading 1.0
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ grading ---
+[INFO] Deleting /Users/victorzhao/git/hw2-xinyunzh/test_script/grading_hw1_2/run/hw2-xinyunzh/target
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ grading ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
@@ -44,86 +33,61 @@ Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/exec-maven-p
 [INFO] Compiling 1 source file to /Users/victorzhao/git/hw2-xinyunzh/test_script/grading_hw1_2/run/hw2-xinyunzh/target/classes
 [INFO] 
 [INFO] --- exec-maven-plugin:1.3.2:java (default-cli) @ grading ---
-Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.pom
-3/3 KB              Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11.pom (3 KB at 34.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
-766/766 B               Downloaded: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom (766 B at 11.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
-2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom (2 KB at 29.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.1/maven-plugin-api-2.0.1.pom
-643/643 B               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.1/maven-plugin-api-2.0.1.pom (643 B at 9.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.1/maven-2.0.1.pom
-4/12 KB     8/12 KB   8/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.1/maven-2.0.1.pom (12 KB at 172.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.2/commons-exec-1.2.pom
-4/11 KB    8/11 KB   8/11 KB   11/11 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.2/commons-exec-1.2.pom (11 KB at 159.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom
-4/52 KB    8/52 KB   8/52 KB   12/52 KB   16/52 KB   16/52 KB   20/52 KB   24/52 KB   24/52 KB   28/52 KB   31/52 KB   32/52 KB   36/52 KB   39/52 KB   40/52 KB   44/52 KB   47/52 KB   48/52 KB   52/52 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom (52 KB at 510.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.2/commons-exec-1.2.jar
-4/53 KB    8/53 KB   8/53 KB   12/53 KB   16/53 KB   16/53 KB   20/53 KB   24/53 KB   24/53 KB   28/53 KB   31/53 KB   32/53 KB   36/53 KB   39/53 KB   40/53 KB   44/53 KB   47/53 KB   48/53 KB   52/53 KB   53/53 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.2/commons-exec-1.2.jar (53 KB at 554.6 KB/sec)
 [WARNING] Warning: killAfter is now deprecated. Do you need it ? Please comment on MEXEC-6.
-Path: file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.jar!
-Path full: file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.jar!/CpeDescriptor.xml
-Relative base with JAR:file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.jar!
+Path: file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.2/hw2-xinyunzh-0.0.2.jar!
+Path full: file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.2/hw2-xinyunzh-0.0.2.jar!/CpeDescriptor.xml
+Relative base with JAR:file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.2/hw2-xinyunzh-0.0.2.jar!
 Parsing CPE Descriptor: 'CpeDescriptor.xml'
 Instantiating CPE
-[WARNING] 
-java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:293)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.apache.uima.resource.ResourceInitializationException: Initialization of CAS Processor with name "hw2-xinyunzh-aae" failed.  
-	at org.apache.uima.collection.impl.CollectionProcessingEngine_impl.initialize(CollectionProcessingEngine_impl.java:83)
-	at org.apache.uima.impl.UIMAFramework_impl._produceCollectionProcessingEngine(UIMAFramework_impl.java:420)
-	at org.apache.uima.UIMAFramework.produceCollectionProcessingEngine(UIMAFramework.java:864)
-	at RunJarCPE.<init>(RunJarCPE.java:93)
-	at RunJarCPE.main(RunJarCPE.java:129)
-	... 6 more
-Caused by: org.apache.uima.resource.ResourceConfigurationException: Initialization of CAS Processor with name "hw2-xinyunzh-aae" failed.  
-	at org.apache.uima.collection.impl.cpm.container.CPEFactory.produceIntegratedCasProcessor(CPEFactory.java:1104)
-	at org.apache.uima.collection.impl.cpm.container.CPEFactory.getCasProcessors(CPEFactory.java:550)
-	at org.apache.uima.collection.impl.cpm.BaseCPMImpl.init(BaseCPMImpl.java:253)
-	at org.apache.uima.collection.impl.cpm.BaseCPMImpl.<init>(BaseCPMImpl.java:127)
-	at org.apache.uima.collection.impl.CollectionProcessingEngine_impl.initialize(CollectionProcessingEngine_impl.java:75)
-	... 10 more
-Caused by: org.apache.uima.resource.ResourceInitializationException: Import failed.  Could not read from URL jar:file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.jar!/Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/LingAnnoDescriptor.xml. (Descriptor: jar:file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.jar!/hw2-xinyunzh-aae.xml)
-	at org.apache.uima.analysis_engine.impl.AggregateAnalysisEngine_impl.initialize(AggregateAnalysisEngine_impl.java:159)
-	at org.apache.uima.impl.AnalysisEngineFactory_impl.produceResource(AnalysisEngineFactory_impl.java:94)
-	at org.apache.uima.impl.CompositeResourceFactory_impl.produceResource(CompositeResourceFactory_impl.java:62)
-	at org.apache.uima.UIMAFramework.produceResource(UIMAFramework.java:269)
-	at org.apache.uima.UIMAFramework.produceResource(UIMAFramework.java:314)
-	at org.apache.uima.UIMAFramework.produceAnalysisEngine(UIMAFramework.java:425)
-	at org.apache.uima.collection.impl.cpm.container.CPEFactory.produceIntegratedCasProcessor(CPEFactory.java:1088)
-	... 14 more
-Caused by: org.apache.uima.util.InvalidXMLException: Import failed.  Could not read from URL jar:file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.jar!/Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/LingAnnoDescriptor.xml. (Descriptor: jar:file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.jar!/hw2-xinyunzh-aae.xml)
-	at org.apache.uima.analysis_engine.impl.AnalysisEngineDescription_impl.resolveDelegateAnalysisEngineImports(AnalysisEngineDescription_impl.java:812)
-	at org.apache.uima.analysis_engine.impl.AnalysisEngineDescription_impl.resolveDelegateAnalysisEngineImports(AnalysisEngineDescription_impl.java:765)
-	at org.apache.uima.analysis_engine.impl.AnalysisEngineDescription_impl.getDelegateAnalysisEngineSpecifiers(AnalysisEngineDescription_impl.java:193)
-	at org.apache.uima.analysis_engine.impl.AggregateAnalysisEngine_impl.initialize(AggregateAnalysisEngine_impl.java:147)
-	... 20 more
-Caused by: java.io.FileNotFoundException: JAR entry Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/LingAnnoDescriptor.xml not found in /Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.jar
-	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:142)
-	at sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:150)
-	at org.apache.uima.util.XMLInputSource.<init>(XMLInputSource.java:120)
-	at org.apache.uima.analysis_engine.impl.AnalysisEngineDescription_impl.resolveDelegateAnalysisEngineImports(AnalysisEngineDescription_impl.java:810)
-	... 23 more
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.051 s
-[INFO] Finished at: 2014-10-09T18:19:45-04:00
-[INFO] Final Memory: 24M/331M
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:1.3.2:java (default-cli) on project grading: An exception occured while executing the Java class. null: InvocationTargetException: Initialization of CAS Processor with name "hw2-xinyunzh-aae" failed. Import failed.  Could not read from URL jar:file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.jar!/Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/LingAnnoDescriptor.xml. (Descriptor: jar:file:/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.jar!/hw2-xinyunzh-aae.xml): JAR entry Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/LingAnnoDescriptor.xml not found in /Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2/hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.jar -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
-hw2-xinyunzh ERROR running '/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2//hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.pom'
-hw2-xinyunzh ERROR missing output file hw2-xinyunzh.out
+Loading default NLPBA tagging module...
+hw2-xinyunzh.out
+Running CPE
+To abort processing, type "abort" and press enter.
+CPM Initialization Complete
+Completed 15000 documents
+Total Time Elapsed: 93435 ms 
+Initialization Time: 957 ms
+Processing Time: 92478 ms
+
+
+ ------------------ PERFORMANCE REPORT ------------------
+
+Component Name: SampleReaderDescriptor
+Event Type: Process
+Duration: 402ms (0.43%)
+Result: success
+Component Name: hw2-xinyunzh-aae
+Event Type: Analysis
+Duration: 91718ms (98.82%)
+Sub-events:
+	Component Name: LingAnnoDescriptor
+	Event Type: Analysis
+	Duration: 5447ms (5.87%)
+
+	Component Name: AbAnnoDescriptor
+	Event Type: Analysis
+	Duration: 85985ms (92.64%)
+
+	Component Name: EvalAnnoDescriptor
+	Event Type: Analysis
+	Duration: 161ms (0.17%)
+
+	Component Name: Fixed Flow Controller
+	Event Type: Analysis
+	Duration: 75ms (0.08%)
+
+Component Name: hw2-xinyunzh-aae
+Event Type: End of Batch
+Duration: 17ms (0.02%)
+Component Name: casConsumerDescriptor
+Event Type: Analysis
+Duration: 653ms (0.7%)
+Component Name: casConsumerDescriptor
+Event Type: End of Batch
+Duration: 22ms (0.02%)
+
+Precision: 0.614186064144
+Recall: 0.886996988776
+F1 Score: 0.725802477432
 /Users/victorzhao/git/hw2-xinyunzh/test_script/grading_hw1_2
-Stopping after a failure!
+# of student records processed: 

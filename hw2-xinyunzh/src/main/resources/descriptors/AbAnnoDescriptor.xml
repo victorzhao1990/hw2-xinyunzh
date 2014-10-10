@@ -11,7 +11,7 @@
     <configurationParameterSettings/>
     <typeSystemDescription>
       <imports>
-        <import location="/Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/hw2TypeSystemDescriptor.xml"/>
+        <import location="hw2TypeSystemDescriptor.xml"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>

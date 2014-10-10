@@ -1,2 +1,1 @@
-hw2-xinyunzh ERROR running '/Users/victorzhao/.m2/repository/edu/cmu/lti/11791/f14/hw2//hw2-xinyunzh/0.0.1-SNAPSHOT/hw2-xinyunzh-0.0.1-SNAPSHOT.pom'
-hw2-xinyunzh ERROR missing output file hw2-xinyunzh.out
+hw2-xinyunzh 0.0.2 SUCCESS F1 Score: 0.725802477432

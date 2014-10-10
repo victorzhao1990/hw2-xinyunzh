@@ -4,13 +4,13 @@
   <primitive>false</primitive>  
   <delegateAnalysisEngineSpecifiers>
     <delegateAnalysisEngine key="AbAnnoDescriptor">
-      <import location="/Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/AbAnnoDescriptor.xml"/>
+      <import location="descriptors/AbAnnoDescriptor.xml"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="EvalAnnoDescriptor">
-      <import location="/Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/EvalAnnoDescriptor.xml"/>
+      <import location="descriptors/EvalAnnoDescriptor.xml"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="LingAnnoDescriptor">
-      <import location="/Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/LingAnnoDescriptor.xml"/>
+      <import location="descriptors/LingAnnoDescriptor.xml"/>
     </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>

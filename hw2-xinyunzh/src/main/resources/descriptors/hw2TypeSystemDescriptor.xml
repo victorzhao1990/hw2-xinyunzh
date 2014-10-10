@@ -5,7 +5,7 @@
     <version>1.0</version>
     <vendor/>
   <imports>
-    <import location="/Users/victorzhao/git/hw2-xinyunzh/hw2-xinyunzh/src/main/resources/descriptors/deiis_types.xml"/>
+    <import location="deiis_types.xml"/>
   </imports>
   <types>
     <typeDescription>

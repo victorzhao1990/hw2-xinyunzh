@@ -29,6 +29,8 @@ public class LingAnno extends JCasAnnotator_ImplBase {
 
 	/** The number of maximum words within a gene name */
 	private static final int MAX_N_BEST_CHUNKS = 8;
+	
+	private static final String RESOURCE_PATH_NAME = "/neenbiogenetag.HmmChunker";
 
 	/** The File instance for model */
 	private File model;
@@ -45,13 +47,10 @@ public class LingAnno extends JCasAnnotator_ImplBase {
 		super.initialize(aContext);
 		try {
 			chunker = (ConfidenceChunker) AbstractExternalizable.
-					readObject(new File(getContext().getResourceFilePath("HmmChunker")));
+					readResourceObject(RESOURCE_PATH_NAME);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (ResourceAccessException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
