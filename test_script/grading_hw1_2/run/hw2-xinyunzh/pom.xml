@@ -28,7 +28,7 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>edu.cmu.lti.11791.f14.hw2</groupId><artifactId>hw2-xinyunzh</artifactId><version>0.0.2</version>
+      <groupId>edu.cmu.lti.11791.f14.hw2</groupId><artifactId>hw2-xinyunzh</artifactId><version>0.0.3-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>
