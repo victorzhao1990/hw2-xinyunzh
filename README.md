@@ -28,11 +28,14 @@ CASConsumer will write all of the gene that the system analyzed into one single 
 ### Running result
 
 Precision: 0.614186064144
+
 Recall: 0.886996988776
+
 F1 Score: 0.725802477432
 
 ### Reference:
 
 Alias-i, L. (2008). 4.1. 0. URL http://alias-i. com/lingpipe.
+
 ABNER: A Biomedical Named Entity Recognizer. (n.d.). Retrieved October 9, 2014. 
 URL http://pages.cs.wisc.edu/~bsettles/abner/
