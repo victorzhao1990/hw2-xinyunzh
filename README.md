@@ -35,7 +35,7 @@ F1 Score: 0.725802477432
 
 ### Reference:
 
-Alias-i, L. (2008). 4.1. 0. URL http://alias-i. com/lingpipe.
+Alias-i, L. (2008). 4.1. 0. URL http://alias-i.com/lingpipe.
 
 ABNER: A Biomedical Named Entity Recognizer. (n.d.). Retrieved October 9, 2014.
 
